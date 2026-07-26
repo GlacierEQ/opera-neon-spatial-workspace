@@ -1,0 +1,16 @@
+{
+  "repo": "opera-neon-spatial-workspace",
+  "algorithm": "sha256",
+  "file_count": 9,
+  "hashes": {
+    "README.md": "aae3856c2c774238edef1a98ad7ac4731cbebd40f538f818f7b9ff08adf717fb",
+    "AKOS.md": "85b0411f6a01275a320dcb4be4c0556509cebae4e46b87dc935153cc017b364b",
+    "AGENTS.md": "85190a2f21d5b492d040ff7f8a2c2630367a836e455c9444e05f684acf4e8020",
+    "HELIX_STRAND.md": "c0f4e12a8dbf23c6fa5a38f6ce6fd351538b9e46e5cc04e56920dbc2281b7535",
+    "mastermind_sidecar.py": "4983b188fe99e49d9e32a8d448975aa20267da55e92998d15903eee69da14376",
+    "SECURITY_AND_FLEET_OPS.md": "26141c0f07d95847d679de423ddb7bdee6f3e319d204383c89a58d6d3bb610c7",
+    "HELIX.md": "caad635e5550ebed0895ba68a3375ffea2495eba0ff668a9704f763eb05c2d07",
+    "tests/test_neon.py": "3f20fab711476ce43cc690ecbe4ae647f364c5332cd11a6ec5233a9565bb70bb",
+    "src/opera_neon_spatial_workspace.py": "e21e7aefac7b670fbfedaf1742d9cb3a231299404821dfb18d9b005574a30d3d"
+  }
+}
