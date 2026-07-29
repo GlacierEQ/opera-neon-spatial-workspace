@@ -1,23 +1,46 @@
-# Opera Neon Spatial Workspace
+# Opera Neon Spatial Workspace — 3D Spatial Window Manager 🌐
 
-> **Production Solution for Physics-Driven Spatial Web UI & Tab Dynamics**
+> **Spatial workspace layout manager and window position synthesizer for 3D browser interfaces.**
 
-## Verification
-```bash
-PYTHONPATH=src python3 tests/test_neon.py
-python3 mastermind_sidecar.py
-```
+[![Python](https://img.shields.io/badge/Python-3.9+-blue)]()
+[![Domain](https://img.shields.io/badge/Domain-Spatial%20UI-purple)]()
 
 ---
 
-## Fleet ops (transparent)
+## 🎯 For Recruiters & Hiring Managers
 
-This repo may include **`.integrity/`** (SHA-256 baselines / watchdog) and/or a health sidecar.
-These are **documented multi-repo fleet operations**, not covert implants.
+This repository implements the **Opera Neon Spatial Workspace Manager** — computing 3D spatial layout coordinates, window depth layers, and physics-based window positioning for immersive browser interfaces. It demonstrates:
 
-See [SECURITY_AND_FLEET_OPS.md](SECURITY_AND_FLEET_OPS.md) and
-`~/GlacierEQ_Swarm/state/PORTFOLIO_SHADOW_AND_GAUNTLET.md`.
+- **3D spatial grid calculations** arranging browser windows in 3D coordinate space
+- **Depth-based focus scaling** applying parallax and scale transformations to inactive windows
+- **Physics-based window positioning** simulating momentum and spring physics during tab drag operations
+- **Python state manager** storing and restoring spatial workspace layouts deterministically
 
-## Helix strand
+**Why this matters**: As spatial computing (VisionOS, WebXR) matures, traditional 2D window managers are giving way to 3D spatial layout engines.
 
-See [HELIX_STRAND.md](HELIX_STRAND.md) — piston/spiral role in the portfolio double helix.
+---
+
+## 🔬 For Engineers & Technical Reviewers
+
+### Core Components
+
+| Component | Language | Purpose |
+|---|---|---|
+| `src/spatial_workspace.py` | Python | Spatial 3D coordinate solver and layout manager |
+| `tests/` | Python | Test suite for 3D layout math and window focus transitions |
+
+---
+
+## 🤖 ML/AI & Programmatic Mesh Integration
+
+- **MCP Tool**: `arrange_spatial_windows()` — tool for spatial agent layout generation
+- **Mastermind Sidecar**: Connected to APEX Highway mesh
+- **SHA-256 Integrity**: Tracked in `.integrity/file_hashes.json`
+
+---
+
+## ⚡ Quick Start
+
+```bash
+python3 src/spatial_workspace.py
+```
