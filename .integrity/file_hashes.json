@@ -1,5 +1,5 @@
 {
-  "file_count": 9,
+  "file_count": 10,
   "hashes": {
     "AGENTS.md": "85190a2f21d5b492d040ff7f8a2c2630367a836e455c9444e05f684acf4e8020",
     "AKOS.md": "85b0411f6a01275a320dcb4be4c0556509cebae4e46b87dc935153cc017b364b",
@@ -9,6 +9,7 @@
     "SECURITY_AND_FLEET_OPS.md": "26141c0f07d95847d679de423ddb7bdee6f3e319d204383c89a58d6d3bb610c7",
     "mastermind_sidecar.py": "4983b188fe99e49d9e32a8d448975aa20267da55e92998d15903eee69da14376",
     "src/opera_neon_spatial_workspace.py": "e21e7aefac7b670fbfedaf1742d9cb3a231299404821dfb18d9b005574a30d3d",
+    "src/spatial_physics.cpp": "65574f04e6f62a707895888e9552a6781ba770f43e8433a718f25c193e99b3c4",
     "tests/test_neon.py": "3f20fab711476ce43cc690ecbe4ae647f364c5332cd11a6ec5233a9565bb70bb"
   }
 }
