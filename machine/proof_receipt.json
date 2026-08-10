@@ -1,0 +1,31 @@
+{
+  "schema": "glaciereq.proof-receipt.v1",
+  "repository": "GlacierEQ/opera-neon-spatial-workspace",
+  "source_sha": "a1f838824b2f1dd0b4e9f5466588401c92fa45341df72d87e2bbf2f3abc9ceb6",
+  "proof_id": "elite-opera-neon-spatial-workspace-1786335149",
+  "environment": {
+    "python": "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python",
+    "PYTHONPATH": "/Users/kcbflux/job-app/repos/opera-neon-spatial-workspace:/Users/kcbflux/job-app/repos/opera-neon-spatial-workspace/src",
+    "entry": "unittest"
+  },
+  "tests": [
+    "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python -m unittest discover -s tests -v (x2)"
+  ],
+  "adversarial_tests": [
+    "tests/test_adversarial.py"
+  ],
+  "runtime": {
+    "operate": "scripts/operate.py (x2)",
+    "dual_run_ok": true,
+    "proof_dual_run_ok": true
+  },
+  "result": "PASS",
+  "limitations": [
+    "not production deployed",
+    "reference implementation only"
+  ],
+  "timestamp": "2026-08-10T04:12Z",
+  "artifact_hashes": {
+    "operability_receipt": "975da80dea322bffbe3ce685247b391eae42c473b64c53a90ecb84d95604c791"
+  }
+}

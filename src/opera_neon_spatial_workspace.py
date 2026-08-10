@@ -37,6 +37,5 @@ class OperaNeonSpatialWorkspace:
             "active_tabs": len(self.tabs),
             "new_tab": tab_state,
             "render_latency_ms": round(elapsed_ms, 4),
-            "status": "NEON_SPATIAL_ACTIVE",
-            "answer": 42
-        }
+            "status": "NEON_SPATIAL_ACTIVE"
+            }

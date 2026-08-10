@@ -1,0 +1,46 @@
+{
+  "schema": "glaciereq.operability-receipt.v1",
+  "repository": "GlacierEQ/opera-neon-spatial-workspace",
+  "at": "2026-08-10T04:12Z",
+  "source_sha": "a1f838824b2f1dd0b4e9f5466588401c92fa45341df72d87e2bbf2f3abc9ceb6",
+  "entry": "scripts/operate.py",
+  "primary_output": {
+    "module": "opera_neon_spatial_workspace",
+    "ok": true,
+    "repository": "GlacierEQ/opera-neon-spatial-workspace",
+    "smoke": {
+      "args": [
+        "'sample_title'",
+        "'sample_url'",
+        "1.0",
+        "1.0"
+      ],
+      "content_checked": true,
+      "invoked": true,
+      "kind": "class",
+      "method": "add_spatial_tab",
+      "module_local": true,
+      "name": "OperaNeonSpatialWorkspace",
+      "result": {
+        "active_tabs": 1,
+        "new_tab": {
+          "bubble_radius_px": 64,
+          "position": [
+            1.0,
+            1.0
+          ],
+          "title": "sample_title",
+          "url": "sample_url",
+          "velocity": [
+            0.0,
+            0.0
+          ]
+        },
+        "render_latency_ms": 0.0043,
+        "status": "NEON_SPATIAL_ACTIVE"
+      }
+    }
+  },
+  "dual_run_ok": true,
+  "result": "PASS"
+}
