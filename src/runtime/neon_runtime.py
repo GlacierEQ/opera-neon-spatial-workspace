@@ -1,44 +1,33 @@
 from .receipts import ActionReceipt
 
-
 class NeonRuntime:
-    """Verification-first wrapper for browser execution adapters.
+    """Execution wrapper for Opera Neon actions.
 
-    This layer intentionally separates intent, execution, and verification so
-    browser actions can produce durable receipts instead of silent clicks.
+    The runtime intentionally separates action execution from verification so
+    every browser mutation can produce a durable receipt.
     """
 
     def __init__(self, adapter=None):
         self.adapter = adapter
+        self.receipts = []
 
     def health(self):
-        return {
-            "adapter_connected": self.adapter is not None,
-            "runtime": "opera-neon-execution-runtime",
-        }
-
-    def inspect(self):
-        if not self.adapter:
-            return None
-        return self.adapter.inspect()
+        if self.adapter and hasattr(self.adapter, "health"):
+            return self.adapter.health()
+        return {"connected": False, "reason": "adapter_not_attached"}
 
     def execute(self, action, target, **kwargs):
-        before = kwargs.pop("before_state", None)
+        before = self.inspect_state(target)
         try:
-            result = getattr(self.adapter, action)(**kwargs) if self.adapter else None
-            return ActionReceipt(
-                action=action,
-                target=target,
-                success=True,
-                before_state=before,
-                after_state=kwargs.get("after_state"),
-                detail=result,
-            )
+            result = self.adapter.execute(action, target, **kwargs) if self.adapter else None
+            after = self.inspect_state(target)
+            receipt = ActionReceipt(action, target, True, before, after, {"result": result})
         except Exception as exc:
-            return ActionReceipt(
-                action=action,
-                target=target,
-                success=False,
-                before_state=before,
-                detail={"error": str(exc)},
-            )
+            receipt = ActionReceipt(action, target, False, before, before, {"error": str(exc)})
+        self.receipts.append(receipt)
+        return receipt
+
+    def inspect_state(self, target):
+        if self.adapter and hasattr(self.adapter, "inspect"):
+            return self.adapter.inspect(target)
+        return "unverified"
