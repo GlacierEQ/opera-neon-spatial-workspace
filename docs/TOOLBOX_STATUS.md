@@ -1,12 +1,13 @@
-# Opera Neon Execution Toolbox
+# Opera Neon Toolbox
 
-Runtime layers now include:
+Execution surface:
+- inspect
+- navigate
+- find
+- click
+- fill
+- verify
+- recover
+- receipts
 
-- runtime wrapper
-- action receipts
-- adapter boundary
-- toolbox execution primitive
-- failure capture
-- workflow foundation
-
-Next integration target is binding the toolbox to live Neon connector operations and verification callbacks.
+Built as the runtime boundary between workflows and the Opera Neon connector.
